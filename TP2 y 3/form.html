@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2b55bc8199.js" crossorigin="anonymous"></script>
+    <title>Cocina sin T.A.C.C.</title>
+</head>
+<body>
+    <header style="background-color:orange;">
+        <nav>
+            <a style="background-color:chocolate;" href="index.html">Home</a>
+            <a style="background-color:chocolate;" href="about.html">Acerca de mi</a>
+            <a style="background-color:chocolate;" href="contact.html">Contacto</a>
+            <a style="background-color:chocolate;" href="sucursales.html">Sucursales</a>
+            <a style="background-color:chocolate;" href="form.html">Registro</a>
+        </nav>
+       <h1 style="text-align:center;">Cocina sin T.A.C.C.</h1>
+   </header>
+   <menu>
+    <h2>Formulario de registro</h2>
+       <form action="show_data.html" target="_blank">
+           <label for="firstname">Nombre: </label>      <input type="text" name="firstname" placeholder="Ingrese su nombre aqui...">    <br><br>
+           <label for="lastname">Apellido: </label>     <input type="text" name="lastname" placeholder="Ingrese su apellido aqui...">   <br><br>
+           <label for="age">Edad: </label>      <input type="number" name="age" placeholder="Ingrese su edad aqui...">   <br><br>
+           <label for="street">Direccion: </label>      <input type="text" name="address" placeholder="Ingrese su direccion aqui...">   <br><br>
+           <label for="city">Ciudad: </label>           <input type="text" name="city" value="C.A.B.A">                                 <br><br>
+           <label for="zipcode">Codigo Postal: </label> <input type="number" name="zipcode" value="1043"><br><br>
+           <label for="BirthDate">Fecha de nacimiento (mm/dd/yyyy): </label> <input type="date" name="birthdate">                       <br><br>
+
+           <p>Genero:
+               <input type="radio" name="gender" value="Hombre" checked> Hombre
+               <input type="radio" name="gender" value="Mujer"> Mujer
+               <input type="radio" name="gender" value="Otro"> Otro
+           </p>
+           <p>Intolerante a:
+               <input type="checkbox" name="intolerante" value="lactosa">Lacteos
+               <input type="checkbox" name="intolerante" value="harina">Harina
+               <input type="checkbox" name="intolerante" value="glucosa">Azucar
+               <input type="checkbox" name="intolerante" value="carne">Carne
+               <input type="checkbox" name="intolerante" value="otro">Otro
+           </p>
+           <input type="submit" value="Enviar">
+       </form>
+       <p>Al apretar en el boton "Enviar", la informacion será enviada a la pagina "show_data.html"</p>
+   </menu>
+   <footer style="text-align:center; background-color:orange;">
+    <br>
+    <a href="https://www.facebook.com/groups/318889684973921/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.youtube.com/channel/UCa8l2Yc3zq4uuyaU1QXyR-g" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.instagram.com/soyceliaconoextraterrestre/?hl=es-la" target="_blank"><i class="fab fa-instagram-square"></i></a>
+    <br>
+    <p>Todos los derechos reservados @2020</p>
+    <br>
+</footer>
+</body>
+</html>
