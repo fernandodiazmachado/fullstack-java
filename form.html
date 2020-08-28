@@ -18,37 +18,70 @@
         </nav>
        <h1>Cocina sin T.A.C.C.</h1>
    </header>
-   <menu>
-    <h2>Formulario de registro</h2>
-       <form action="show_data.html" target="_blank">
-           <fieldset>
-               <legend>Usuario</legend>
-               <label for="firstname">Nombre: </label><input type="text" name="firstname" placeholder="Ingrese su nombre aqui...">    <br><br>
-               <label for="lastname">Apellido: </label><input type="text" name="lastname" placeholder="Ingrese su apellido aqui..."><br><br>
-               <label for="age">Edad: </label>      <input type="number" name="age" placeholder="Ingrese su edad aqui...">   <br><br>
-           </fieldset>
-           
-           <label for="street">Direccion: </label>      <input type="text" name="address" placeholder="Ingrese su direccion aqui...">   <br><br>
-           <label for="city">Ciudad: </label>           <input type="text" name="city" value="C.A.B.A">                                 <br><br>
-           <label for="zipcode">Codigo Postal: </label> <input type="number" name="zipcode" value="1043"><br><br>
-           <label for="BirthDate">Fecha de nacimiento (mm/dd/yyyy): </label> <input type="date" name="birthdate">                       <br><br>
-
-           <p>Genero:
-               <input type="radio" name="gender" value="Hombre" checked> Hombre
-               <input type="radio" name="gender" value="Mujer"> Mujer
-               <input type="radio" name="gender" value="Otro"> Otro
-           </p>
-           <p>Intolerante a:
-               <input type="checkbox" name="intolerante" value="lactosa">Lacteos
-               <input type="checkbox" name="intolerante" value="harina">Harina
-               <input type="checkbox" name="intolerante" value="glucosa">Azucar
-               <input type="checkbox" name="intolerante" value="carne">Carne
-               <input type="checkbox" name="intolerante" value="otro">Otro
-           </p>
-           <input type="submit" value="Enviar">
+   <main>
+        <form action="show_data.html" target="_blank">
+         <h2>Formulario de registro</h2>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label>Nombre:
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre aqui..." required>
+                </label>
+                <br><br>
+                <label>Apellido:
+                    <input type="text" name="apellido" placeholder="Ingrese su apellido aqui..." required>
+                </label>
+                <br><br>
+                <label>Edad:
+                    <input type="number" name="edad" min="18" max="100">
+                </label>
+                <label for="fecha_nacimiento">Fecha de nacimiento:
+                    <input type="date" name="fecha_nacimiento">
+                </label> 
+                <br><br>
+                Genero:
+                    <label><input type="radio" name="gender" value="Hombre" checked> Hombre</label>
+                    <label><input type="radio" name="gender" value="Mujer"> Mujer</label>
+                    <label><input type="radio" name="gender" value="Otro"> Otro</label>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <label for="direccion">Direccion: 
+                    <input id="direccion" type="text" name="direccion" placeholder="Ingrese su direccion aqui...">
+                </label>
+                <br><br>
+                <label for="ciudad">Ciudad:
+                    <input id="ciudad" type="text" name="city" value="C.A.B.A">
+                </label>
+                <br><br>
+                <label for="cp">Codigo Postal:
+                    <input id="cp" type="number" name="cp" value="1043">
+                </label>
+                <br><br>
+                <label>Telefono:
+                    <input type="number" name="telefono">
+                </label>
+                <br><br>
+                <label>Email:
+                    <input type="email" placeholder="ejemplo@dominio.com" required>
+                </label>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Datos adicionales</legend>
+                Intolerante a:
+                    <label><input type="checkbox" name="intolerante" value="lactosa">Lacteos</label>
+                    <label><input type="checkbox" name="intolerante" value="harina">Harina</label>
+                    <label><input type="checkbox" name="intolerante" value="glucosa">Azucar</label>
+                    <label><input type="checkbox" name="intolerante" value="carne">Carne</label>
+                    <label><input type="checkbox" name="intolerante" value="otro">Otro</label> 
+            </fieldset>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset">
        </form>
        <p>Al apretar en el boton "Enviar", la informacion será enviada a la pagina "show_data.html"</p>
-   </menu>
+   </main>
    <footer>
     <br>
     <a href="https://www.facebook.com/groups/318889684973921/" target="_blank"><i class="fab fa-facebook"></i></a>
