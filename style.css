@@ -1,6 +1,7 @@
-nav > a
+nav
 {
     background-color:chocolate;
+    text-align: center;
 }
 
 header
@@ -8,10 +9,19 @@ header
     background-color:orange;
 }
 
+body{
+    position: relative;
+    padding-bottom: 58px;
+    min-height: 100vh;
+}
+
 footer
 {
     text-align:center;
     background-color:orange;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 h1
@@ -30,4 +40,16 @@ form
 {
     text-align:center;
     
+}
+
+.receta
+{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.mapa
+{
+    display: inline-block;
+    margin-right: 50px;
 }
