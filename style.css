@@ -20,6 +20,7 @@ body{
     position: relative;
     padding-bottom: 58px;
     min-height: 100vh;
+    background-image: url("img/logo.jpg");
 }
 
 footer
@@ -54,10 +55,22 @@ form
 {
     display: inline-block;
     margin-right: 50px;
+    
 }
 
 .mapa
 {
     display: inline-block;
     margin-right: 50px;
+}
+
+.presentacion
+{
+    width: 250px;
+    height: 250px;
+}
+
+#principal
+{
+    
 }
