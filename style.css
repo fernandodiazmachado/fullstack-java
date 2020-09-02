@@ -1,14 +1,26 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #titulo
 {
     color: blueviolet;
     padding-top: 20px;
     margin-top: 0;
+    font-family: 'Indie Flower', cursive;
+    
+    
 }
 
 nav
 {
     background-color:chocolate;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 header
@@ -80,4 +92,16 @@ form
 .preparacion::first-letter{
     font-size:3em;
 	font-family:serif;
+}
+
+.nav__button
+{
+    background-color: black;
+    border-color: white;
+    border-radius: 20%;
+}
+
+.nav__button a{
+    padding: 20px;
+    color: white;
 }
