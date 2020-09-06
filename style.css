@@ -11,7 +11,7 @@
     padding-top: 20px;
     margin-top: 0;
     font-family: 'Indie Flower', cursive;
-    
+    position: sticky;
     
 }
 
@@ -26,14 +26,14 @@ nav
 header
 {
     background-color:orange;
-    
+    position: sticky;
 }
 
 body{
     position: relative;
     padding-bottom: 58px;
     min-height: 100vh;
-   margin: 0 ;
+    margin: 0 ;
 }
 
 footer
